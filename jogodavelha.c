@@ -1,14 +1,17 @@
+//Esse código estruturado têm a função de simular um jogo da velha.
+//Ele localiza os espaços escolhidos , garante que poderao ser usadas e é capax de calcular empates e vitorias de diferentes angulos (diagonal e vertical).
+
 //Manuela Ramos Fonseca  2º semestre do  ADS Vespertino
 
 #include <stdio.h> // Biblioteca para entrada e saída 
 
-#include <stdbool.h> //Bibliotecas para ter usar os booleanos 
+#include <stdbool.h> //Bibliotecas para usar tipo boolean
  
-// Representa espaço vazio
+// Para espaço vazio
 
 const char vazio = ' ';
  
-// Matriz 3x3 que representa o tabuleiro
+// Matriz 3x3 como foi requisitado 
 
 char tabuleiro[3][3];
  
@@ -197,7 +200,7 @@ int main() {
 
         }
  
-        // Alterna jogador
+        // Revezamento de  jogadores
 
         if(jogador_atual == 'X') {
 
@@ -211,7 +214,7 @@ int main() {
 
     }
  
-    // Mostra tabuleiro final
+    // Tabuleiro final
 
     mostrarTabuleiro();
  
@@ -230,4 +233,5 @@ int main() {
     return 0;
 
 }
+
  
